@@ -19,7 +19,7 @@ fi
 if ! mkdir -p "$(dirname "$WRITEFILE")" >/dev/null 2>&1 || ! touch "$WRITEFILE" >/dev/null 2>&1; 
 then
     #  Print an error message and exit with status 1
-    echo "File $WRITEFILE could not be created."
+    echo "File $WRITEFILE could not be created."  
     exit 1
 else
     echo "File $WRITEFILE created successfully."
